@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<body id="body">
+		<script>
+			function rcolor(){
+				var library = "123456789ABCDEF"
+				var color = "#"
+				for (var i = 0; i < 6; i++) {
+					color += library.charAt(Math.floor(Math.random()*15))
+					console.log(color)
+					document.getElementById('body').style.background = color
+				}
+			}
+			rcolor()
+			setInterval(function(){rcolor()}, 1000)
+		</script>
+	</body>
+</html>
